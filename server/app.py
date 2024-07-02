@@ -13,7 +13,7 @@ def print_text(text):
 
 @app.route('/count/<int:number>')
 def count(number):
-    return '\n'.join(str(i) for i in range(number))
+    return '\n'.join(str(i) for i in range(number)) + '\n'
 
 @app.route('/math/<int:num1>/<string:operation>/<int:num2>')
 def math(num1, operation, num2):
